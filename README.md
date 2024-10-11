@@ -23,7 +23,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- https://github.com/PaulAdetomiwa/product-preview-card-component/blob/main/index.html
+- https://github.com/PaulAdetomiwa/four-card-feature/blob/main/index.html
 
 ## My process
 
@@ -31,53 +31,70 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS Grid
 - CSS Flexbox 
 - Media queries
 
 ### What I learned
 
+```html
+    <div class="container">
+      <div class="columns">
+        <div class="card">
+          <div class="bar1"></div>
+          <h3>Supervisor</h3>
+          <span>Monitors activity to identify project roadblocks</span>
+          <div class="img-cntr"><img src="./images/icon-supervisor.svg" alt="supervisor"></div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="card">
+          <div class="bar2"></div>
+          <h3>Team Builder</h3>
+          <span>Scans our talent network to create the optimal team for your project</span>
+          <div class="img-cntr"><img src="./images/icon-team-builder.svg" alt="team-builder"></div>
+        </div>
+        <div class="card">
+          <div class="bar3"></div>
+          <h3>Karma</h3>
+          <span>Regularly evaluates our talent to ensure quality</span>
+          <div class="img-cntr"><img src="./images/icon-karma.svg" alt="karma"></div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="card">
+          <div class="bar4"></div>
+          <h3>Calculator</h3>
+          <span>Uses data from past projects to provide better delivery estimates</span>
+          <div class="img-cntr"><img src="./images/icon-calculator.svg" alt="calculator"></div>
+        </div>
+      </div>
+    </div>
+```
+- This was pretty much most of the work for the HTML part. Putting the cards in containers so the layout can be achievable.
+
 ```css
-@media (max-width: 768px) {
-      body {
-        margin: 20px;
-      }
+.columns:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-content: center;
+    }
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 400px;
-      }
+    .columns:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-      .image-container {
-        width: 100%;
-      }
-
-      .image-container img {
-        border-radius: 15px 15px 0 0;
-        height: 300px;
-      }
-
-      .text {
-        width: 90%;
-        padding: 0;
-        margin: 20px 0 20px 5%;
-      }
-
-      .text h1 {
-        font-size: 36px;
-      }
-
-      .text p {
-        width: 93%;
-      }
-
-      .current-price {
-        font-size: 36px;
-      }
+    .columns:nth-child(3) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      align-content: center;
     }
 ```
-- This is the media query for screens on or beneath the width of 768px. Major adjustments to the .container div in its flex direction, and font sizes of various of the text in the webpage.
+- This was the most vital part of the layout, especially when it came to the use of CSS grid. 
 
 - The width and heights of the elements were set using responsiveness-friendly metrics, mostly percentages.
 
