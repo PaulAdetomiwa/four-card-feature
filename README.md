@@ -11,6 +11,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [New](#new)
 
 
 ## Overview
@@ -24,6 +25,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 ### Links
 
 - https://github.com/PaulAdetomiwa/four-card-feature/blob/main/index.html
+
 
 ## My process
 
@@ -103,3 +105,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - Website - [Paul Adetomiwa](https://github.com/PaulAdetomiwa)
 - Frontend Mentor - [@PaulAdetomiwa](https://www.frontendmentor.io/profile/PaulAdetomiwa)
 - X - [@AdewolePaul6](https://www.x.com/AdewolePaul6)
+
+## New
+- So, I've decided to start using external CSS for learning purposes, but I personally have a preference for the "<style>" tag and just writing all the css within the same file.
